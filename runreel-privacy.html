@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RunReel Privacy Policy</title>
+  <style>body{font:16px/1.65 system-ui,sans-serif;max-width:860px;margin:40px auto;padding:0 22px;color:#17211c}h1,h2{line-height:1.25}h2{margin-top:2rem;color:#075985}.notice{padding:14px 16px;border-left:4px solid #c2410c;background:#fff7ed}.meta{color:#53625b}li{margin:.35rem 0}@media(prefers-color-scheme:dark){body{background:#111815;color:#e4ece7}h2{color:#7dd3fc}.notice{background:#292524}.meta{color:#b8c4bd}}</style>
+</head>
+<body>
+<h1>RunReel Privacy Policy</h1>
+<p class="meta"><strong>Effective date:</strong> October 12, 2026<br><strong>Developer:</strong> Team DM Studio</p>
+<p class="notice"><strong>Publication setup required:</strong> replace <code>SUPPORT_EMAIL_REQUIRED</code> and the deletion-page URL, then publish this file on a public HTTPS page before release.</p>
+
+<h2>1. Scope</h2>
+<p>RunReel records running, walking, treadmill, trail running, hiking, and cycling activities and helps users create route stories, share images, and videos. RunReel is a general fitness app, not a medical device, and does not diagnose, treat, or prevent disease. BMI, calories, GPS, elevation, pace, and similar values may be estimates.</p>
+
+<h2>2. Information RunReel processes</h2>
+<ul>
+  <li><strong>Account:</strong> email address, Firebase user ID, authentication and email-verification state. RunReel does not store plaintext passwords.</li>
+  <li><strong>Location:</strong> precise GPS position, timestamp, accuracy, speed, bearing, and altitude for outdoor route recording.</li>
+  <li><strong>Activity and fitness:</strong> activity type, distance, duration, moving/rest time, pace or speed, steps, cadence, laps, elevation, highest point, and estimated calories.</li>
+  <li><strong>Health profile and goals:</strong> height, weight history, informational BMI, unit preferences, and weekly or monthly distance goals.</li>
+  <li><strong>User content:</strong> Route Story titles and descriptions, and photos or videos explicitly selected with Android Photo Picker.</li>
+  <li><strong>Technical information:</strong> consent state and service/device request data processed by Firebase, Firebase App Check, Mapbox, Google Play services, and Android.</li>
+</ul>
+
+<h2>3. Guest mode and local storage</h2>
+<p>RunReel works without an account. Guest workouts, routes, weight records, health profile, goals, story content, and media references are stored locally in Android Room or Preferences DataStore. Exported images and videos are stored in user-visible device media. Local data remains until the user deletes it, clears app data, or uninstalls the app, subject to Android backup settings.</p>
+
+<h2>4. Optional account and Cloud Sync</h2>
+<p>Firebase Authentication is used for email/password and Google sign-in. Cloud Sync is off until a signed-in, verified user explicitly enables it. When enabled, RunReel may upload activity records, compressed GPS routes, laps, height, weight, goals, Route Story text, and optimized derivatives of selected Story images to Firebase Firestore and Cloud Storage for backup, migration, synchronization, and device restore. Cloud data is isolated under the signed-in Firebase user ID. Turning sync off stops future sync but does not automatically erase existing cloud data.</p>
+
+<h2>5. Location</h2>
+<p>Precise location is requested when the user starts an outdoor RUN, WALK, HIKE, TRAIL_RUN, or CYCLE activity. TREADMILL does not require location. Location is used for route, distance, pace/speed, elevation, maps, summaries, stories, shares, and videos. Mapbox map requests may process IP address and device/request metadata. Users should avoid sharing route exports when revealing a home, workplace, or other sensitive location would create risk.</p>
+
+<h2>6. Photos and videos</h2>
+<p>RunReel uses Android Photo Picker and accesses only items the user selects. Selected media is used for Route Story, Share Studio, and Video Studio. Story images are uploaded only when Cloud Sync is enabled. Share/export actions send media only to a destination selected by the user. Generated exports remain until the user deletes them.</p>
+
+<h2>7. Service providers</h2>
+<ul>
+  <li><strong>Firebase Authentication, Firestore, and Cloud Storage:</strong> account, optional synchronization, backup, and restore.</li>
+  <li><strong>Firebase App Check:</strong> app/device attestation and abuse protection. Release builds use Play Integrity.</li>
+  <li><strong>Mapbox:</strong> maps, terrain, route display, attribution, and map snapshots.</li>
+  <li><strong>Google Play services Location:</strong> device location for outdoor activity recording.</li>
+  <li><strong>Google Credential Manager:</strong> user-initiated Google sign-in.</li>
+</ul>
+<p>RunReel 1.0 release builds are configured not to request or display advertising. Google Mobile Ads and UMP are used only in debug/testing builds unless a future release explicitly enables production advertising and updates this policy and Play disclosures first.</p>
+
+<h2>8. Purposes and legal choices</h2>
+<p>Information is processed to provide activity tracking, recovery, maps, history, goals, account security, optional synchronization, Route Story, shares, and videos; to prevent abuse; and to troubleshoot service failures. Users can remain a guest, deny optional permissions, avoid selecting media, keep Cloud Sync off, or stop using network-backed features.</p>
+
+<h2>9. Security and international processing</h2>
+<p>RunReel uses Android sandboxing, scoped storage, runtime permissions, authenticated Firebase rules, Firebase App Check, and HTTPS/TLS service connections. No system can guarantee absolute security. Service providers may process data in countries other than the user’s country under their terms and privacy policies.</p>
+
+<h2>10. Retention and deletion</h2>
+<p>Local records remain until deleted by the user, app data is cleared, or the app is uninstalled. Cloud-synced records remain until the user deletes the RunReel account/cloud data or the service removes them under an applicable legal requirement. The in-app path is <strong>Settings → Account → Delete Account</strong>. It deletes data only in the RunReel Firestore/Storage namespace, then requests deletion of the Firebase Authentication account. Because Firebase Authentication is shared across apps in the same Firebase project, deleting that authentication identity may also prevent sign-in to those other apps; RunReel warns before deletion. Other apps’ Firestore and Storage data is not deleted. An external request pathway will be published at the RunReel account-deletion page. No special retention is currently claimed after a completed deletion request, except where law, security, fraud prevention, or an unresolved request requires limited retention.</p>
+
+<h2>11. Children</h2>
+<p>RunReel is not intentionally directed to children. The final target-audience selection and availability must remain consistent with the app’s fitness, location, account, media, and any future advertising configuration.</p>
+
+<h2>12. Changes and contact</h2>
+<p>This policy may be updated when features, providers, or legal requirements change. Questions and deletion requests: <strong>SUPPORT_EMAIL_REQUIRED</strong>.</p>
+
+<hr>
+<h1 lang="ko">RunReel 개인정보처리방침 요약</h1>
+<p lang="ko">RunReel은 야외 운동의 정밀 위치, 운동·건강 프로필, 사용자가 선택한 미디어를 처리합니다. 계정 없이 게스트로 사용할 수 있고, 로그인한 사용자가 Cloud Sync를 직접 켠 경우에만 Firebase에 경로, 운동 기록, 키·체중·목표, Route Story와 선택된 스토리 이미지 파생본을 백업합니다. 트레드밀은 위치 권한이 필요하지 않습니다. RunReel 1.0 출시 빌드는 광고를 요청하거나 표시하지 않습니다. 앱의 <strong>설정 → 계정 → 계정 삭제</strong>에서 RunReel 클라우드 데이터와 Firebase 인증 계정 삭제를 요청할 수 있습니다. RunReel은 의료기기가 아니며 의료 진단이나 치료를 제공하지 않습니다. 문의 및 외부 삭제 요청: <strong>SUPPORT_EMAIL_REQUIRED</strong>.</p>
+</body>
+</html>

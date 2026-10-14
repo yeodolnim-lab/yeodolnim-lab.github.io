@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Delete your RunReel account</title>
+  <style>body{font:16px/1.65 system-ui,sans-serif;max-width:760px;margin:44px auto;padding:0 22px;color:#17211c}h1,h2{line-height:1.25}.notice{padding:14px 16px;background:#fff7ed;border-left:4px solid #c2410c}</style>
+</head>
+<body>
+<h1>Delete your RunReel account</h1>
+<p><strong>App:</strong> RunReel<br><strong>Developer:</strong> Team DM Studio</p>
+<p class="notice"><strong>External setup required:</strong> replace <code>SUPPORT_EMAIL_REQUIRED</code> with a monitored support address and publish this page at a public HTTPS URL before Play release.</p>
+
+<h2>Delete in the app</h2>
+<ol><li>Open RunReel.</li><li>Go to <strong>Settings → Account</strong>.</li><li>Select <strong>Delete Account</strong> and review the warning.</li><li>If RunReel asks for recent authentication, sign out, sign in again, and repeat the deletion promptly.</li></ol>
+
+<h2>Request deletion without the app</h2>
+<p>Email <strong>SUPPORT_EMAIL_REQUIRED</strong> with the subject “RunReel account deletion request” from the address used for RunReel. Do not send a password, authentication token, Firebase UID, GPS coordinates, or health information. We may ask for a safe verification step proving control of the account email.</p>
+
+<h2>Data deleted</h2>
+<ul><li>RunReel Firebase Authentication account;</li><li>RunReel Firestore profile, activity records, laps, Route Story text, weight history, height, and goals;</li><li>RunReel Cloud Storage GPS route backups and Story image derivatives.</li></ul>
+<p>Deletion is restricted to RunReel’s namespace. Data belonging to another app in the shared Firebase project is not deleted. Deleting the shared Firebase Authentication identity may, however, prevent sign-in to another app that uses the same identity.</p>
+
+<h2>Data not automatically deleted</h2>
+<p>Local guest/app data and exported images or videos on a device must be removed from that device by deleting records, deleting exports, clearing app data, or uninstalling. Data already shared to another app is controlled by that recipient.</p>
+
+<h2>Retention</h2>
+<p>No special retention period is currently claimed after completed deletion. Limited records may be retained only when required by law or necessary for security, fraud prevention, or resolving the deletion request, and the requester will be informed when applicable.</p>
+</body>
+</html>
