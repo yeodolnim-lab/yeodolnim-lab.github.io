@@ -2,29 +2,364 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Delete your RunReel account</title>
-  <style>body{font:16px/1.65 system-ui,sans-serif;max-width:760px;margin:44px auto;padding:0 22px;color:#17211c}h1,h2{line-height:1.25}.notice{padding:14px 16px;background:#fff7ed;border-left:4px solid #c2410c}</style>
-</head>
-<body>
-<h1>Delete your RunReel account</h1>
-<p><strong>App:</strong> RunReel<br><strong>Developer:</strong> Team DM Studio</p>
-<p class="notice"><strong>External setup required:</strong> replace <code>SUPPORT_EMAIL_REQUIRED</code> with a monitored support address and publish this page at a public HTTPS URL before Play release.</p>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h2>Delete in the app</h2>
-<ol><li>Open RunReel.</li><li>Go to <strong>Settings → Account</strong>.</li><li>Select <strong>Delete Account</strong> and review the warning.</li><li>If RunReel asks for recent authentication, sign out, sign in again, and repeat the deletion promptly.</li></ol>
+  <title>Delete your RunReel account</title>
+
+  <style>
+    body {
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 760px;
+      margin: 44px auto;
+      padding: 0 22px;
+      color: #17211c;
+    }
+
+    h1, h2 {
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      color: #075985;
+    }
+
+    .meta {
+      color: #53625b;
+    }
+
+    .links {
+      margin: 1.5rem 0;
+      padding: 14px 16px;
+      border-left: 4px solid #075985;
+      background: #f0f9ff;
+    }
+
+    .warning {
+      margin: 1.5rem 0;
+      padding: 14px 16px;
+      border-left: 4px solid #c2410c;
+      background: #fff7ed;
+    }
+
+    li {
+      margin: 0.4rem 0;
+    }
+
+    a {
+      color: #0369a1;
+    }
+
+    hr {
+      margin: 3rem 0;
+      border: 0;
+      border-top: 1px solid #d1d5db;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #111815;
+        color: #e4ece7;
+      }
+
+      h2 {
+        color: #7dd3fc;
+      }
+
+      .meta {
+        color: #b8c4bd;
+      }
+
+      .links {
+        background: #17232a;
+      }
+
+      .warning {
+        background: #292524;
+      }
+
+      a {
+        color: #7dd3fc;
+      }
+
+      hr {
+        border-top-color: #374151;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Delete your RunReel account</h1>
+
+<p class="meta">
+  <strong>App:</strong> RunReel<br>
+  <strong>Developer:</strong> Team DM Studio<br>
+  <strong>Support:</strong>
+  <a href="mailto:yeodolnim@gmail.com">yeodolnim@gmail.com</a>
+</p>
+
+<div class="links">
+  <strong>Related links</strong><br>
+  <a href="https://yeodolnim-lab.github.io/runreel-privacy.html">
+    RunReel Privacy Policy
+  </a><br>
+  <a href="https://yeodolnim-lab.github.io/">
+    Team DM Studio
+  </a>
+</div>
+
+<h2>Delete your account in the app</h2>
+
+<ol>
+  <li>Open RunReel.</li>
+  <li>Go to <strong>Settings → Account</strong>.</li>
+  <li>Select <strong>Delete Account</strong>.</li>
+  <li>Review the deletion warning.</li>
+  <li>Confirm the deletion request.</li>
+</ol>
+
+<p>
+  If RunReel requires recent authentication, sign in again
+  and repeat the deletion request shortly afterward.
+</p>
+
+<div class="warning">
+  <strong>Important:</strong>
+  Deleting your RunReel account is intended to permanently remove
+  your RunReel cloud data and the associated Firebase Authentication
+  account. This action may not be reversible.
+</div>
 
 <h2>Request deletion without the app</h2>
-<p>Email <strong>SUPPORT_EMAIL_REQUIRED</strong> with the subject “RunReel account deletion request” from the address used for RunReel. Do not send a password, authentication token, Firebase UID, GPS coordinates, or health information. We may ask for a safe verification step proving control of the account email.</p>
+
+<p>
+  If you cannot access RunReel, you can request deletion by email.
+</p>
+
+<p>
+  Send an email to:
+  <strong>
+    <a href="mailto:yeodolnim@gmail.com">
+      yeodolnim@gmail.com
+    </a>
+  </strong>
+</p>
+
+<p>
+  Suggested subject:
+  <strong>RunReel account deletion request</strong>
+</p>
+
+<p>
+  For account verification, please send the request from the email
+  address used to create or sign in to your RunReel account.
+</p>
+
+<p>
+  Do not send your password, authentication token, Firebase UID,
+  GPS coordinates, health information, or other unnecessary
+  sensitive information.
+</p>
+
+<p>
+  Team DM Studio may request a limited verification step
+  to confirm that the requester controls the relevant account.
+</p>
 
 <h2>Data deleted</h2>
-<ul><li>RunReel Firebase Authentication account;</li><li>RunReel Firestore profile, activity records, laps, Route Story text, weight history, height, and goals;</li><li>RunReel Cloud Storage GPS route backups and Story image derivatives.</li></ul>
-<p>Deletion is restricted to RunReel’s namespace. Data belonging to another app in the shared Firebase project is not deleted. Deleting the shared Firebase Authentication identity may, however, prevent sign-in to another app that uses the same identity.</p>
 
-<h2>Data not automatically deleted</h2>
-<p>Local guest/app data and exported images or videos on a device must be removed from that device by deleting records, deleting exports, clearing app data, or uninstalling. Data already shared to another app is controlled by that recipient.</p>
+<p>
+  When account deletion is completed, RunReel is designed to delete
+  data associated with the RunReel account, including:
+</p>
+
+<ul>
+  <li>RunReel Firebase Authentication account;</li>
+
+  <li>
+    RunReel Firestore profile and account-related records;
+  </li>
+
+  <li>
+    activity records, laps, cadence information,
+    and related activity metadata;
+  </li>
+
+  <li>
+    RunReel Route Story titles, descriptions,
+    and synchronized Story information;
+  </li>
+
+  <li>
+    weight history, height, target weight,
+    and configured activity goals;
+  </li>
+
+  <li>
+    RunReel Cloud Storage GPS route backups;
+  </li>
+
+  <li>
+    synchronized Story image data or derivatives
+    stored by RunReel.
+  </li>
+</ul>
+
+<h2>Shared Firebase Authentication</h2>
+
+<p>
+  RunReel uses a Firebase project that may also support
+  other applications from the same developer.
+</p>
+
+<p>
+  RunReel account deletion is restricted to RunReel's own
+  Firestore and Cloud Storage namespaces.
+  RunReel does not intentionally delete another application's
+  Firestore or Cloud Storage data.
+</p>
+
+<p>
+  However, the Firebase Authentication identity may be shared
+  across applications in the same Firebase project.
+  Deleting that authentication identity may therefore prevent
+  the user from signing in to another application that uses
+  the same Firebase Authentication account.
+</p>
+
+<p>
+  RunReel displays a warning before requesting deletion
+  of the authentication identity.
+</p>
+
+<h2>Data not automatically deleted from your device</h2>
+
+<p>
+  Account deletion does not necessarily remove every file
+  stored locally on the user's device.
+</p>
+
+<p>
+  Local guest data, locally stored app data,
+  downloaded or exported images, exported videos,
+  and media already shared to another application
+  may need to be deleted separately by the user.
+</p>
+
+<p>
+  Local data can be removed by using available delete functions,
+  clearing RunReel app data, deleting exported media,
+  or uninstalling the application, depending on the type of data.
+</p>
+
+<p>
+  Content already shared with another application or service
+  is subject to that recipient's own storage and deletion policies.
+</p>
 
 <h2>Retention</h2>
-<p>No special retention period is currently claimed after completed deletion. Limited records may be retained only when required by law or necessary for security, fraud prevention, or resolving the deletion request, and the requester will be informed when applicable.</p>
+
+<p>
+  RunReel does not currently claim a special retention period
+  after a completed account-deletion request.
+</p>
+
+<p>
+  Limited information may be retained when required by law,
+  or when reasonably necessary for security, fraud prevention,
+  dispute resolution, or completion of an unresolved deletion request.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+  Questions about account deletion can be sent to:
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <a href="mailto:yeodolnim@gmail.com">
+    yeodolnim@gmail.com
+  </a>
+</p>
+
+<p>
+  <strong>Privacy Policy:</strong>
+  <a href="https://yeodolnim-lab.github.io/runreel-privacy.html">
+    https://yeodolnim-lab.github.io/runreel-privacy.html
+  </a>
+</p>
+
+<p>
+  <strong>Developer website:</strong>
+  <a href="https://yeodolnim-lab.github.io/">
+    https://yeodolnim-lab.github.io/
+  </a>
+</p>
+
+<hr>
+
+<h1 lang="ko">RunReel 계정 삭제 안내</h1>
+
+<p lang="ko">
+  RunReel 앱에서
+  <strong>설정 → 계정 → 계정 삭제</strong>
+  메뉴를 통해 계정 삭제를 요청할 수 있습니다.
+</p>
+
+<p lang="ko">
+  앱을 사용할 수 없는 경우
+  RunReel에서 사용한 이메일 주소로
+  아래 지원 이메일에 계정 삭제를 요청할 수 있습니다.
+</p>
+
+<p lang="ko">
+  <strong>
+    <a href="mailto:yeodolnim@gmail.com">
+      yeodolnim@gmail.com
+    </a>
+  </strong>
+</p>
+
+<p lang="ko">
+  이메일 제목은
+  <strong>RunReel account deletion request</strong>
+  로 작성할 수 있습니다.
+</p>
+
+<p lang="ko">
+  비밀번호, 인증 토큰, Firebase UID,
+  GPS 좌표, 건강정보 등 불필요한 민감정보는
+  이메일로 보내지 마세요.
+</p>
+
+<p lang="ko">
+  계정 삭제가 완료되면 RunReel의 클라우드 운동 기록,
+  경로 백업, 랩 기록, Route Story 정보,
+  키·체중·목표체중·운동 목표 등의 데이터와
+  Firebase 인증 계정 삭제가 처리됩니다.
+</p>
+
+<p lang="ko">
+  다만 Firebase Authentication 계정이 같은 개발자의 다른 앱과
+  공유되는 경우 해당 인증 계정을 삭제하면
+  다른 앱에서도 로그인할 수 없게 될 수 있습니다.
+</p>
+
+<p lang="ko">
+  기기에 저장된 게스트 데이터, 내보낸 사진이나 동영상,
+  이미 다른 앱이나 서비스에 공유된 파일은
+  별도로 삭제해야 할 수 있습니다.
+</p>
+
+<p lang="ko">
+  개인정보처리방침:
+  <a href="https://yeodolnim-lab.github.io/runreel-privacy.html">
+    RunReel 개인정보처리방침
+  </a>
+</p>
+
 </body>
 </html>
